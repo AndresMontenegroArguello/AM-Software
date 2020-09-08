@@ -1,7 +1,7 @@
 # AM Software API
 
 
-![AM Software API](/img/logo.png "AM Software API")
+![AM Software API](./img/logo.png "AM Software API")
 
 ## Overview
 AM Software API is a poweful API with many domain-specific categorized modules for a wide range of applications.

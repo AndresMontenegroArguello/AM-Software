@@ -1,4 +1,4 @@
-<center>
+
 # AM Software API
 
 
@@ -22,4 +22,4 @@ Unauthorized copying of this software, via any medium is strictly prohibited.
 Proprietary and confidential.
 
 Written by Andrés Montenegro Argüello <<am@amsoftware.co>>, September 2018.
-</center>
+

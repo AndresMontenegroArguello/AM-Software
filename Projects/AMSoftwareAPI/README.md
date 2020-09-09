@@ -6,7 +6,7 @@
 ## Overview
 AM Software API is a poweful API with many domain-specific categorized modules for a wide range of applications.
 
-AM Software is currently under development.
+AM Software API is currently under development.
 
 Stay tuned for updates.
 

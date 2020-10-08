@@ -17,6 +17,18 @@ Stay tuned for updates.
 
 The history of AM Astor dates way back from its development. I first developed a similar but far more basic project in Java back in 2012. Around 2016 I was contacted by a major retail chain to develop a modern and far more advanced version of their vastly outdated software, but the deal didn't come to fruition and I decided to keep developing a prototype for my own, and thus AM Astor was born.
 
+## Screenshots
+
+![AM Astor](./img/ss/01.png "AM Astor")
+
+![AM Astor](./img/ss/02.png "AM Astor")
+
+![AM Astor](./img/ss/03.png "AM Astor")
+
+![AM Astor](./img/ss/04.png "AM Astor")
+
+![AM Astor](./img/ss/05.png "AM Astor")
+
 ## Author
 
 Written by Andrés Montenegro Argüello <<am@amsoftware.co>>, May 2016.

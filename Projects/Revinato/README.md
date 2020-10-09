@@ -3,7 +3,7 @@
 ![Revinato](./img/ss/02.png "Revinato")
 
 ## Overview
-This is the third major iteration of the [Revinato](https://github.com/AndresMontenegroArguello/AM-Software/Projects/ASINWebScraper) that I developed from scratch and this includes a web applicationdeveloped with Python3 and Django, connected to a SQLite 3 Database Backend, with many front-end technologies. It includes many more features besides the core web scraper features, such as statistics, email notifications, and many more.
+This is the third major iteration of the [ASIN Web Scraper](https://github.com/AndresMontenegroArguello/AM-Software/Projects/ASINWebScraper) that I developed from scratch and this includes a web applicationdeveloped with Python3 and Django, connected to a SQLite 3 Database Backend, with many front-end technologies. It includes many more features besides the core web scraper features, such as statistics, email notifications, and many more.
 
 ## Screenshots
 

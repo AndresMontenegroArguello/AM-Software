@@ -1,7 +1,7 @@
 # ASIN Web Scraper 
 
 ## Overview
-ASIN Web Scraper is a web scraper I developed from scratch using Python 3 and XPath patterns to extract and process specific data from <Amazon.com>, not available through the official Amazon API.
+ASIN Web Scraper is a web scraper I developed from scratch using Python 3 and XPath patterns to extract and process specific data from [Amazon.com](https://amazon.com), not available through the official Amazon API.
 
 ## Author
 Written by Andrés Montenegro Argüello <<am@amsoftware.co>>, February 2020.

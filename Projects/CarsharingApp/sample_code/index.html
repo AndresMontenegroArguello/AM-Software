@@ -1,0 +1,387 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}
+
+      <!-- Main Content -->
+      <div class="content-box">
+         <!-- Hero Section -->
+         <section class="section section-hero">
+            <div class="hero-box">
+               <div class="container">
+                  <div class="hero-text align-center">
+                     <h1>Rent A Car Now!</h1>
+                     <p>and set your wheels into the sunset!</p>
+                  </div>
+
+                  <form class="destinations-form">
+                     <div class="input-line">
+                        <input type="text" name="destination" value="" class="form-input check-value" placeholder="WHAT IS YOUR DESTINATION?" />
+                        <button type="button" name="destination-submit" class="form-submit btn btn-special">Find a car</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+            <!-- Statistics Box -->
+            <div class="container">
+               <div class="statistics-box">
+                  <div class="statistics-item">
+                     <span class="value">{{ cities_count }}</span>
+                     <p class="title">Cities</p>
+                  </div>
+
+                  <div class="statistics-item">
+                     <span class="value">{{ countries_count }}</span>
+                     <p class="title">Countries</p>
+                  </div>
+
+                  <div class="statistics-item">
+                     <span class="value">{{ cars_count }}</span>
+                     <p class="title">Cars</p>
+                  </div>
+
+                  <div class="statistics-item">
+                     <span class="value">{{ drivers_count }}</span>
+                     <p class="title">Drivers</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Destinations Section -->
+         <section class="section section-destination">
+            <!-- Title -->
+            <div class="section-title">
+               <div class="container">
+                  <h2 class="title">Explore our top destinations</h2>
+                  <!--<p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>-->
+               </div>
+            </div>
+
+            <!-- Content -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-16 col-xs-24">
+                     <div class="destination-box">
+                        <div class="box-cover">
+                           <a href="/disclaimer">
+                              <img src="{% static 'img/destinations/barcelona.jpg' %}" alt="destination image" style="height: 360px;" />
+                           </a>
+                        </div>
+
+                        <span class="cars-qty">{{ barcelona_count }}</span>
+
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Barcelona</h4>
+                              <p class="country">Spain</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-8 col-sm-12 col-xs-24">
+                     <div class="destination-box">
+                        <div class="box-cover">
+                           <a href="/disclaimer">
+                              <img src="{% static 'img/destinations/buenos_aires.jpg' %}" alt="destination image" style="height: 360px; width:100%;" />
+                           </a>
+                        </div>
+
+                        <span class="cars-qty">{{ bsas_count }}</span>
+
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Buenos Aires</h4>
+                              <p class="country">Argentina</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-8 col-sm-12 col-xs-24">
+                     <div class="destination-box">
+                        <div class="box-cover">
+                           <a href="/disclaimer">
+                              <img src="{% static 'img/destinations/rio.jpg' %}" alt="destination image" style="height: 360px; width:100%;" />
+                           </a>
+                        </div>
+
+                        <span class="cars-qty">{{ rio_count }}</span>
+
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Rio De Janeiro</h4>
+                              <p class="country">Brazil</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-8 col-sm-12 col-xs-24">
+                     <div class="destination-box">
+                        <div class="box-cover">
+                           <a href="/disclaimer">
+                              <img src="{% static 'img/destinations/miami.jpg' %}" alt="destination image" style="height: 360px; width:100%;" />
+                           </a>
+                        </div>
+
+                        <span class="cars-qty">{{ miami_count }}</span>
+
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Miami</h4>
+                              <p class="country">USA</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-8 col-sm-12 col-xs-24">
+                     <div class="destination-box">
+                        <div class="box-cover">
+                           <a href="/disclaimer">
+                              <img src="{% static 'img/destinations/amsterdam.jpg' %}" alt="destination image" style="height: 360px; width:100%;" />
+                           </a>
+                        </div>
+
+                        <span class="cars-qty">{{ amsterdam_count }}</span>
+
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Amsterdam</h4>
+                              <p class="country">Netherlands</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="load-destinations-box">
+                     <div class="col-md-8 col-sm-12 col-xs-24">
+                        <div class="destination-box">
+                           <div class="box-cover">
+                              <a href="/disclaimer">
+                                 <img src="{% static 'img/destinations/sao_paulo.jpg' %}" alt="destination image" style="height: 360px; width:100%;" />
+                              </a>
+                           </div>
+
+                           <span class="cars-qty">{{ saopaulo_count }}</span>
+
+                           <div class="box-details">
+                              <div class="box-meta">
+                                 <h4 class="city">Sao Paulo</h4>
+                                 <p class="country">Brazil</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-8 col-sm-12 col-xs-24">
+                        <div class="destination-box">
+                           <div class="box-cover">
+                              <a href="/disclaimer">
+                                 <img src="{% static 'img/destinations/santiago.jpg' %}" alt="destination image" style="height: 360px; width:100%;" />
+                              </a>
+                           </div>
+
+                           <span class="cars-qty">{{ santiago_count }}</span>
+
+                           <div class="box-details">
+                              <div class="box-meta">
+                                 <h4 class="city">Santiago</h4>
+                                 <p class="country">Chile</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-8 col-sm-24 col-xs-24">
+                        <div class="destination-box">
+                           <div class="box-cover">
+                              <a href="/disclaimer">
+                                 <img src="{% static 'img/destinations/lima.jpg' %}" alt="destination image" style="height: 360px;" />
+                              </a>
+                           </div>
+
+                           <span class="cars-qty">{{ lima_count }}</span>
+
+                           <div class="box-details">
+                              <div class="box-meta">
+                                 <h4 class="city">Lima</h4>
+                                 <p class="country">Perú</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="align-center">
+                  <a href="#" class="btn btn-default btn-load-destination"><span class="text">Explore more destinations</span><i class="icon-spinner6"></i></a>
+               </div>
+            </div>
+         </section>
+
+         <!-- Parallax Box -->
+         <div class="parallax-box">
+            <div class="container">
+               <div class="text align-center">
+                  <h1>Have your own car?</h1>
+                  <!--<p>navigare necesse est, vivere non est necesse</p>-->
+
+                  <a href="/disclaimer" class="btn btn-special no-icon size-2x">List Your Car</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- cars Section -->
+          <!-- cars Section -->
+         <section class="section section-cars">
+            <!-- Title -->
+            <div class="section-title">
+               <div class="container">
+                  <h2 class="title">Rent A Car</h2>
+                  <!--<p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>-->
+               </div>
+            </div>
+
+            <!-- Content -->
+            <div class="container">
+               <div class="row">
+            {% if all_cars %}
+            {% for car in all_cars %}
+               {% with car.getFirstPictureURL as car_pic_url  %}
+                  {% if forloop.counter > 10 %}
+                  <div class="load-cars-box">
+                  {% endif %}
+                  <div class="col-sm-12 col-xs-24">
+                     <a href = "/rentals/{{ car.id }}">
+                        <div class="car-box">
+                        <div class="box-cover">
+                           <img src="{{ car_pic_url }}" alt="" class="am-img-cover" style="height: 360px; width:100%;"  />
+                        </div>
+
+                        <span class="car-price">${{ car.dayRate }} / day </span>
+
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="car-name">{{ car }}</h4>
+                              <ul class="clean-list car-meta">
+                                 <li class="location">{{car.city.name}}, {{car.country.name}}</li>
+                                 <li class="berths">{{ car.seats }} Seats</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  </div>
+                  {% if forloop.counter > 10 %}
+                  </div>
+                  {% endif %}
+                  {% endwith %}
+            {% endfor %}
+         {% else %}
+            <h1>No cars yet.</h1>
+         {% endif %}
+                  
+               </div>
+
+               <div class="align-center">
+                  <a href="#" class="btn btn-default btn-load-cars"><span class="text">Load more cars</span><i class="icon-spinner6"></i></a>
+               </div>
+
+
+
+
+<br><br><br><br>
+
+<div class="container">
+    <div class="row">
+      
+   </div>
+    
+    <div class="row">
+        <!-- The carousel -->
+        <div id="transition-timer-carousel" class="carousel slide transition-timer-carousel" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+            <li data-target="#transition-timer-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#transition-timer-carousel" data-slide-to="1"></li>
+            <li data-target="#transition-timer-carousel" data-slide-to="2"></li>
+            <li data-target="#transition-timer-carousel" data-slide-to="3"></li>
+            <li data-target="#transition-timer-carousel" data-slide-to="4"></li>
+         </ol>
+
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner">
+               <div class="item active" style="height: 600px;">
+                  <a href="/rentals/cars">
+                    <img class="am-img-cover" style="height:100%;width:100%;" src="{% static 'img/rentals-cars.jpg' %}" />
+                    <div class="carousel-caption">
+                        <center><h1 class="carousel-caption-header">RENT A CAR</h1></center>
+                    </div>
+                    </a>
+                </div>
+                
+                  <div class="item" style="height: 600px;">
+                     <a href="/rentals/suvs">
+                    <img class="am-img-cover" style="height:100%;width:100%;" src="{% static 'img/rentals-suvs.jpg' %}" />
+                    <div class="carousel-caption">
+                        <h1 class="carousel-caption-header">RENT A SUV</h1>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="item" style="height: 600px;">
+                  <a href="/rentals/trucks">
+                    <img class="am-img-cover" style="height:100%;width:100%;" src="{% static 'img/rentals-trucks.jpg' %}" />
+                    <div class="carousel-caption">
+                        <h1 class="carousel-caption-header">RENT A TRUCK</h1>
+                        
+                    </div>
+                    </a>
+                </div>
+
+                  <div class="item" style="height: 600px;">
+                     <a href="/rentals/vans">
+                    <img class="am-img-cover" style="height:100%;width:100%;" src="{% static 'img/rentals-minivans.jpg' %}" />
+                    <div class="carousel-caption">
+                        <h1 class="carousel-caption-header">RENT A MINIVAN</h1>
+                    </div>
+                 </a>
+                </div>
+
+                  <div class="item" style="height: 600px;">
+                     <a href="/rentals/vans">
+                    <img class="am-img-cover" style="height:100%;width:100%;" src="{% static 'img/rentals-vans.jpg' %}" />
+                    <div class="carousel-caption">
+                        <h1 class="carousel-caption-header">RENT A VAN</h1>
+                    </div>
+                    </a>
+                </div>
+             
+            </div>
+
+         <!-- Controls -->
+         <a class="left carousel-control" href="#transition-timer-carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a class="right carousel-control" href="#transition-timer-carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+            
+            <!-- Timer "progress bar" -->
+            <hr class="transition-timer-carousel-progress-bar animate" />
+      </div>
+    </div>
+</div>
+
+
+            </div>
+
+         </section>
+            
+          
+      </div>
+
+{% endblock %}

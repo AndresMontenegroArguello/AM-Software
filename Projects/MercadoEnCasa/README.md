@@ -3,7 +3,7 @@
 ![Mercado En Casa](./img/logo.png "Mercado En Casa")
 
 ## Overview
-This is a project I developed in 3 days for the [Starup Weekend](https://startupweekend.org) 2018 in Managua, Nicaragua, which earned the second winner spot in the competition.
+This is a project I developed in 3 days for the [Startup Weekend](https://startupweekend.org) 2018 in Managua, Nicaragua, which earned the second winner spot in the competition.
 
 It is an E-Commerce application for instant groceries delivery which I developed using various web technologies, but also validated as a profitable business model by a talented group of professionals in the fields of Finances, Marketing, Management, Design and Communication.
 
